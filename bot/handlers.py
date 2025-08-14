@@ -15,10 +15,10 @@ MENU_KEY = "main_menu"
 
 def main_menu_kb() -> InlineKeyboardBuilder:
     builder = InlineKeyboardBuilder()
-    builder.button(text="Сигналы", callback_data="signals")
-    builder.button(text="Мои пары", callback_data="pairs")
-    builder.button(text="Статистика", callback_data="stats")
-    builder.button(text="Настройки", callback_data="settings")
+    builder.button(text="🚨Сигналы", callback_data="signals")
+    builder.button(text="👀Мои пары", callback_data="pairs")
+    builder.button(text="📊Статистика", callback_data="stats")
+    builder.button(text="⚙️Настройки", callback_data="settings")
     builder.adjust(2, 2)
     return builder
 

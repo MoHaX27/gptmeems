@@ -3,6 +3,9 @@ from __future__ import annotations
 
 import os
 from pathlib import Path
+from dotenv import load_dotenv
+
+load_dotenv()
 
 # Telegram
 BOT_TOKEN: str = os.getenv("BOT_TOKEN", "PUT_YOUR_TELEGRAM_TOKEN_HERE")
@@ -12,7 +15,7 @@ BYBIT_API_KEY: str = os.getenv("BYBIT_API_KEY", "")
 BYBIT_API_SECRET: str = os.getenv("BYBIT_API_SECRET", "")
 
 # Default timeframes to scan
-TIMEFRAMES = ["1m", "5m", "15m", "1h", "4h", "1d"]
+TIMEFRAMES = ["5m", "15m", "30m", "1h", "4h", "1d"]
 
 # Model settings
 MODEL_THRESHOLD: float = float(os.getenv("MODEL_THRESHOLD", "0.5"))
